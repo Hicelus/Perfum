@@ -1,0 +1,40 @@
+header{
+    width: 100%;
+    
+}
+
+#capa{
+    display: block;
+    max-width: 100%; 
+    height: auto;
+}
+
+body{
+    background-color: rgb(239, 239, 239);
+}
+
+@font-face{
+    font-family: BA;
+    src: url(img/GARABL__.TTF);
+}
+
+.botoes{
+    display: inline;
+    font-family: BA;
+    font-size: 160%;
+    padding: 1%;
+    margin: 1%;
+    color: rgb(185, 152, 189);
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botoes:hover{
+    background: url(img/fundoNav.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
