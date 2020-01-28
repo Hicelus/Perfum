@@ -22,11 +22,11 @@ body{
     font-family: BA;
     font-size: 130%;
     border: 1px solid rgb(185, 152, 189);
+    color: rgb(185, 152, 189);
     border-radius: 13pt;
     padding-left: 12px;
     padding-right: 12px;
     margin: 0.5%;
-    color: rgb(185, 152, 189);
     transition-duration: 0.5s;
     cursor: pointer;
 }
@@ -42,8 +42,6 @@ body{
     font-size: 170%;
     color: seashell;
     background: rgb(185, 152, 189);
-    background-repeat:no-repeat;
-    background-size:100% 100%;
     text-decoration: none;
 }
 
@@ -66,7 +64,7 @@ body{
 
 @media only screen and (min-width: 501px){
     .slideshow-container{
-        width: 80%;
+        width: 70%;
     }
 }
   
@@ -140,10 +138,11 @@ body{
 
 #mySidenav a {
     position: absolute;
-    left: -80px;
+    left: -95px;
     transition: 0.3s;
-    padding: 15px;
-    width: 100px;
+    padding: 5px;
+    width: 130px;
+    text-align: right;
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -154,17 +153,17 @@ body{
     left: 0;
   }
   
-  #about {
+  #whats {
     bottom: 1px;
     background-color: #4CAF50;
   }
   
-  #blog {
+  #face {
     bottom: 60px;
     background-color: #2196F3;
   }
   
-  #projects {
+  #insta {
     bottom: 120px;
     background-color: #f44336;
   }
@@ -173,3 +172,13 @@ body{
     bottom: 180px;
     background-color: #555
   }
+
+  .logos{
+      width: 30px;
+  }
+
+  .catalogo{
+    width: 33%;
+    margin: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

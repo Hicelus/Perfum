@@ -18,6 +18,25 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
-function teste(){
-    document.getElementById("sessao").innerHTML = "<p>catarina</p><p>caqta</p>"
+function reiniciarBotoes(){
+    document.getElementsByClassName("botoes").style.fontSize = "130%";
+    document.getElementsByClassName("botoes").style.border = "1px solid rgb(185, 152, 189)";
+    document.getElementsByClassName("botoes").style.color = "rgb(185, 152, 189)";
 }
+
+function homeB(){
+    document.getElementById("sessao").style.visibility = "";
+    document.getElementById("sessao").style.height = "auto";
+    document.getElementById("home").style.fontSize = "170%";
+    document.getElementById("home").style.color = "seashell";
+    document.getElementById("home").style.backgroundColor = "rgb(185, 152, 189)";
+    document.getElementById("home").style.textDecoration = none;
+}
+
+function perfumesB(){
+    document.getElementById("sessao").style.visibility = "hidden";
+    document.getElementById("sessao").style.height = "1px"
+
+    //chamar esta função dentro de outras
+}
+
