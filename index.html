@@ -3,182 +3,196 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Perfum</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <Title> Perfumaria Marcia</Title>
     </head>
-    <body id="bod">
+    <body>
         <header>
-            <img src="img/capa2.jpg" id="capa">
+            <img src="img/capa.jpg" id="capa">
         </header>
 
         <br>
 
-        <div id="menu">
-            <button class="botoes" id="home" onclick="homeB()">Home</button>
-            <button class="botoes" id="perfumes" onclick="perfumesB()">Perfumes</button>
-            <button class="botoes" id="kits" onclick="kitsB()">Kits</button>
-            <button class="botoes" id="pedidoBotao" onclick="pedidoB()">Pedido</button>
-        </div>
+        <nav id="menu">
+            <button class="botoes" id="bHome" onclick="homeB()">Home</button>
+            <button class="botoes" id="bPerfumes" onclick="perfumesB()">Perfumes</button>
+            <button class="botoes" id="bKits" onclick="kitsB()">Kits</button>
+            <button class="botoes" id="bPedido" onclick="pedidoB()">Pedido</button>
+        </nav>
 
         <br>
 
-        <section id="sessao" class="areas">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                <img src="img/p1f.jpg" style="width:100%" class="slide">
-            </div>
-            
-            <div class="mySlides fade">
-                <img src="img/p2f.jpg" style="width:100%" class="slide">
-            </div>
-            
-            <div class="mySlides fade">
-                <img src="img/p3f.jpg" style="width:100%" class="slide">
-            </div>
-            
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
+        <section id="sHome" class="sessoes">
+            <div id="slideshow">
+                <div class="paginaSlide">
+                    <img src="img/p1f.jpg" alt="Slide 1" class="slides">    
+                </div>
+
+                <div class="paginaSlide">
+                    <img src="img/p2f.jpg" alt="Slide 2" class="slides">
+                </div>
+
+                <div class="paginaSlide">
+                    <img src="img/p3f.jpg" alt="Slide 3" class="slides">
+                </div>
+
+                <br>
+
+                <div style="text-align: center;">
+                    <span class="seletorSlide"></span>
+                    <span class="seletorSlide"></span>
+                    <span class="seletorSlide"></span>
+                </div>
             </div>
         </section>
-
-        <section id="catPerfumes" class="areas">
+        
+        <section id="sPerfumes" class="sessoes">
             <div>
+                <div class="catalogo">
+                    <img src="img/a.jpg" alt="Produto 1" class="produtos">
 
-                <div class="container">
-                    <img src="img/a.jpg" alt="Avatar" class="image" class="catalogo">
-                    <div class="middle">
+                    <div class="pDescricao">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui arcu, tincidunt at posuere id.
                     </div>
                 </div>
 
-                <div class="container">
-                    <img src="img/b.jpg" alt="Avatar" class="image" class="catalogo">
-                    <div class="middle">
+                <div class="catalogo">
+                    <img src="img/b.jpg" alt="Produto 2" class="produtos">
+
+                    <div class="pDescricao">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui arcu, tincidunt at posuere id.
                     </div>
                 </div>
 
-                <div class="container">
-                    <img src="img/c.jpg" alt="Avatar" class="image" class="catalogo">
-                    <div class="middle">
+                <div class="catalogo">
+                    <img src="img/c.jpg" alt="Produto 3" class="produtos">
+
+                    <div class="pDescricao">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui arcu, tincidunt at posuere id.
                     </div>
                 </div>
 
-                <div class="container">
-                    <img src="img/d.jpg" alt="Avatar" class="image" class="catalogo">
-                    <div class="middle">
+                <div class="catalogo">
+                    <img src="img/d.jpg" alt="Produto 4" class="produtos">
+
+                    <div class="pDescricao">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui arcu, tincidunt at posuere id.
                     </div>
                 </div>
 
-                <div class="container">
-                    <img src="img/e.jpg" alt="Avatar" class="image" class="catalogo">
-                    <div class="middle">
+                <div class="catalogo">
+                    <img src="img/e.jpg" alt="Produto 5" class="produtos">
+
+                    <div class="pDescricao">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui arcu, tincidunt at posuere id.
                     </div>
                 </div>
 
-                <div class="container">
-                    <img src="img/f.jpg" alt="Avatar" class="image" class="catalogo">
-                    <div class="middle">
+                <div class="catalogo">
+                    <img src="img/f.jpg" alt="Produto 6" class="produtos">
+
+                    <div class="pDescricao">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui arcu, tincidunt at posuere id.
                     </div>
                 </div>
 
-                <div class="container">
-                    <img src="img/g.jpg" alt="Avatar" class="image" class="catalogo">
-                    <div class="middle">
+                <div class="catalogo">
+                    <img src="img/g.jpg" alt="Produto 7" class="produtos">
+
+                    <div class="pDescricao">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui arcu, tincidunt at posuere id.
                     </div>
                 </div>
 
-                <div class="container">
-                    <img src="img/h.jpg" alt="Avatar" class="image" class="catalogo">
-                    <div class="middle">
+                <div class="catalogo">
+                    <img src="img/h.jpg" alt="Produto 8" class="produtos">
+
+                    <div class="pDescricao">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui arcu, tincidunt at posuere id.
                     </div>
                 </div>
 
-                <div class="container">
-                    <img src="img/i.jpg" alt="Avatar" class="image" class="catalogo">
-                    <div class="middle">
+                <div class="catalogo">
+                    <img src="img/i.jpg" alt="Produto 9" class="produtos">
+
+                    <div class="pDescricao">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui arcu, tincidunt at posuere id.
                     </div>
                 </div>
-                
+
             </div>
-
-            
         </section>
 
-        <section id="catKits" class="areas">
-            <div class="row">
-                <div class="column">
-                  <img src="img/as.jpg" alt="Nature" class="kits" onclick="myFunction(this);">
+        <section id="sKits" class="sessoes">
+            <div class="seletorKits">
+                <div class="paginaKits">
+                    <img src="img/as.jpg" alt="Kit 1" class="imagemKit" onclick="destacarKit(this);">
                 </div>
-                <div class="column">
-                  <img src="img/bs.jpg" alt="Snow" class="kits" onclick="myFunction(this);">
+
+                <div class="paginaKits">
+                    <img src="img/bs.jpg" alt="Kit 2" class="imagemKit" onclick="destacarKit(this);">
                 </div>
-                <div class="column">
-                  <img src="img/cs.jpg" alt="Mountains" class="kits" onclick="myFunction(this);">
+
+                <div class="paginaKits">
+                    <img src="img/cs.jpg" alt="Kit 3" class="imagemKit" onclick="destacarKit(this);">
                 </div>
             </div>
-              
-              <div class="container2">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img src="img/as.jpg" id="expandedImg">
-                <div id="imgtext"></div>
-              </div>
+
+            <div class="divDestaque">
+                <img src="img/as.jpg" id="kitDestaque">
+            </div>
         </section>
 
-        <section id="encomendas" class="areas">
+        <section id="sPedidos" class="sessoes">
             <div id="caixa">
                 <form action="" method="post" name="pedido">
                     <fieldset name="campoPedido">
                         <legend id="instrucao">Pedido</legend>
+
                         <label>Nome: </label><br>
                         <input type="text" id="tNome" name="tNome" maxlength="45" size="45" placeholder="Nome"><br>
+                        
                         <label>Endereço: </label><br>
                         <input type="text" id="tEndereco" name="tEndereco" maxlength="45" size="45" placeholder="Endereço"><br>
+                        
                         <label>Telefone: </label><br>
                         <input type="text" name="tTelefone" maxlength="45" size="45" placeholder="Telefone"><br>
+                        
                         <label>Pedido: </label><br>
                         <textarea></textarea><br>
+                        
                         <label>Pagamento: </label><br>
                         <input type="radio" name="pag" value="credito" id="cred"><label for="cred">Crédito</label>
                         <input type="radio" name="pag" value="debito" id="deb"><label for="deb">Débito</label>
                         <input type="radio" name="pag" value="dinheiro" id="din"><label for="din">Dinheiro</label><br>
                         <input type="checkbox" name="ckb" value="troco" id="troc"><label for="troc">Troco?</label><br>
+
+                        <br>
+                        <button id="enviar">Enviar Pedido</button>
                     </fieldset>
                 </form>
             </div>
         </section>
 
-
         <footer id="rodape">
-            <div><img src="img/person.png" id="person"></div>
+            <div>
+                <img src="img/person.png" id="pessoa">
+            </div>
+
             <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed nulla posuere, mattis sem non, malesuada sapien. Nunc lectus justo, imperdiet ac ultricies quis, rhoncus nec ante. Sed nec felis enim. Integer pretium nunc ipsum, eu euismod massa laoreet in. Sed eleifend convallis purus et vulputate. Donec a consectetur sapien. Donec ultrices non nulla vitae pellentesque. Pellentesque non libero eget ex lacinia ullamcorper at eu nunc.
                 <br><br>
                 Fusce lobortis nec quam vitae ornare. Etiam vulputate, nisl sit amet congue vestibulum, velit odio cursus justo, vitae auctor quam est molestie ligula. Nulla congue sem vitae lacus blandit, ac tempus leo dignissim. Vestibulum purus eros, lacinia quis ornare nec, viverra eget tortor. Aenean interdum neque a diam volutpat, a tempus magna lacinia. In pretium aliquet consectetur. Phasellus eu porttitor eros, nec facilisis odio. Maecenas eleifend tincidunt nibh, quis aliquet nibh pharetra at. Vestibulum orci velit, euismod et ultrices quis, imperdiet nec sapien.
             </div>
         </footer>
-        
-        <div id="mySidenav" class="sidenav">
-            <a href="#" id="contact">Contato&nbsp&nbsp<img src="img/phonecall_110970.png" class="logos"></a>
-            <a href="#" id="insta">Instagram&nbsp&nbsp<img src="img/instagram-logo-2.png" class="logos"></a>
-            <a href="#" id="face">Facebook&nbsp&nbsp<img src="img/face.png" class="logos"></a>
-            <a href="#" id="whats">WhatsApp&nbsp&nbsp<img src="img/whats.png" class="logos"></a>
-            
-            
-            
-        </div>
 
+        <div id="midiasSociais">
+            <a href="#" id="contato">Contato&nbsp&nbsp<img src="img/phonecall.png" class="logos"></a>
+            <a href="#" id="insta">Instagram&nbsp&nbsp<img src="img/instagram.png" class="logos"></a>
+            <a href="#" id="face">Facebook&nbsp&nbsp<img src="img/facebook.png" class="logos"></a>
+            <a href="#" id="whats">WhatsApp&nbsp&nbsp<img src="img/whatsapp.png" class="logos"></a>
+        </div>
     </body>
+
     <script src="index.js"></script>
 </html>
