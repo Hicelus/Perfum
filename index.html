@@ -17,7 +17,7 @@
             <button class="botoes" id="home" onclick="homeB()">Home</button>
             <button class="botoes" id="perfumes" onclick="perfumesB()">Perfumes</button>
             <button class="botoes" id="kits" onclick="kitsB()">Kits</button>
-            <button class="botoes" id="cremes">Cremes</button>
+            <button class="botoes" id="pedidoBotao" onclick="pedidoB()">Pedido</button>
         </div>
 
         <br>
@@ -134,6 +134,29 @@
                 <img src="img/as.jpg" id="expandedImg">
                 <div id="imgtext"></div>
               </div>
+        </section>
+
+        <section id="encomendas" class="areas">
+            <div id="caixa">
+                <form action="" method="post" name="pedido">
+                    <fieldset name="campoPedido">
+                        <legend id="instrucao">Pedido</legend>
+                        <label>Nome: </label><br>
+                        <input type="text" id="tNome" name="tNome" maxlength="45" size="45" placeholder="Nome"><br>
+                        <label>Endereço: </label><br>
+                        <input type="text" id="tEndereco" name="tEndereco" maxlength="45" size="45" placeholder="Endereço"><br>
+                        <label>Telefone: </label><br>
+                        <input type="text" name="tTelefone" maxlength="45" size="45" placeholder="Telefone"><br>
+                        <label>Pedido: </label><br>
+                        <textarea></textarea><br>
+                        <label>Pagamento: </label><br>
+                        <input type="radio" name="pag" value="credito" id="cred"><label for="cred">Crédito</label>
+                        <input type="radio" name="pag" value="debito" id="deb"><label for="deb">Débito</label>
+                        <input type="radio" name="pag" value="dinheiro" id="din"><label for="din">Dinheiro</label><br>
+                        <input type="checkbox" name="ckb" value="troco" id="troc"><label for="troc">Troco?</label><br>
+                    </fieldset>
+                </form>
+            </div>
         </section>
 
 

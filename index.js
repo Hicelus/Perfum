@@ -53,6 +53,17 @@ function kitsB(){
   document.getElementById("kits").style.textDecoration = none;
 }
 
+function pedidoB(){
+  reiniciarBotoes();
+  reiniciarSessoes();
+
+  document.getElementById("encomendas").style.display = "block";
+  document.getElementById("pedidoBotao").style.fontSize = "170%";
+  document.getElementById("pedidoBotao").style.color = "seashell";
+  document.getElementById("pedidoBotao").style.backgroundColor = "rgb(185, 152, 189)";
+  document.getElementById("pedidoBotao").style.textDecoration = none;
+}
+
 function reiniciarBotoes(){
   var botoes = document.getElementsByClassName("botoes");
 
@@ -71,10 +82,10 @@ function reiniciarBotoes(){
   botoes[2].style.color = "rgb(185, 152, 189)";
   botoes[2].style.backgroundColor = "white";
 
-    //botoes[3].style.fontSize = "130%";
-    //botoes[3].style.border = "1px solid rgb(185, 152, 189)";
-    //botoes[3].style.color = "rgb(185, 152, 189)";
-    //botoes[3].style.backgroundColor = "white";
+  botoes[3].style.fontSize = "130%";
+  botoes[3].style.border = "1px solid rgb(185, 152, 189)";
+  botoes[3].style.color = "rgb(185, 152, 189)";
+  botoes[3].style.backgroundColor = "white";
 }
 
 function reiniciarSessoes(){
@@ -83,7 +94,7 @@ function reiniciarSessoes(){
   areas[0].style.display = "none";
   areas[1].style.display = "none";
   areas[2].style.display = "none";
-  //areas[3].style.display = "none";
+  areas[3].style.display = "none";
 }
 
 function myFunction(imgs) {
