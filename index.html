@@ -16,7 +16,7 @@
         <div id="menu">
             <button class="botoes" id="home" onclick="homeB()">Home</button>
             <button class="botoes" id="perfumes" onclick="perfumesB()">Perfumes</button>
-            <button class="botoes" id="kits">Kits</button>
+            <button class="botoes" id="kits" onclick="kitsB()">Kits</button>
             <button class="botoes" id="cremes">Cremes</button>
         </div>
 
@@ -116,7 +116,25 @@
             
         </section>
 
-
+        <section id="catKits" class="areas">
+            <div class="row">
+                <div class="column">
+                  <img src="img/as.jpg" alt="Nature" class="kits" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="img/bs.jpg" alt="Snow" class="kits" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="img/cs.jpg" alt="Mountains" class="kits" onclick="myFunction(this);">
+                </div>
+            </div>
+              
+              <div class="container2">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img src="img/as.jpg" id="expandedImg">
+                <div id="imgtext"></div>
+              </div>
+        </section>
 
 
         <footer id="rodape">

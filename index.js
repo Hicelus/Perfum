@@ -21,28 +21,36 @@ function showSlides() {
 
 
 function homeB(){
-    reiniciarBotoes();
-    reiniciarSessoes();
+  reiniciarBotoes();
+  reiniciarSessoes();
 
-    document.getElementById("sessao").style.display = "block";
-    document.getElementById("home").style.fontSize = "170%";
-    document.getElementById("home").style.color = "seashell";
-    document.getElementById("home").style.backgroundColor = "rgb(185, 152, 189)";
-    document.getElementById("home").style.textDecoration = none;
-
-    document.getElementById("catPerfumes").style.visibility = "";
-    document.getElementById("catPerfumes").style.height = "auto";
+  document.getElementById("sessao").style.display = "block";
+  document.getElementById("home").style.fontSize = "170%";
+  document.getElementById("home").style.color = "seashell";
+  document.getElementById("home").style.backgroundColor = "rgb(185, 152, 189)";
+  document.getElementById("home").style.textDecoration = none;
 }
 
 function perfumesB(){
-    reiniciarBotoes();
-    reiniciarSessoes();
+  reiniciarBotoes();
+  reiniciarSessoes();
 
-    document.getElementById("catPerfumes").style.display = "block";
-    document.getElementById("perfumes").style.fontSize = "170%";
-    document.getElementById("perfumes").style.color = "seashell";
-    document.getElementById("perfumes").style.backgroundColor = "rgb(185, 152, 189)";
-    document.getElementById("perfumes").style.textDecoration = none;
+  document.getElementById("catPerfumes").style.display = "block";
+  document.getElementById("perfumes").style.fontSize = "170%";
+  document.getElementById("perfumes").style.color = "seashell";
+  document.getElementById("perfumes").style.backgroundColor = "rgb(185, 152, 189)";
+  document.getElementById("perfumes").style.textDecoration = none;
+}
+
+function kitsB(){
+  reiniciarBotoes();
+  reiniciarSessoes();
+
+  document.getElementById("catKits").style.display = "block";
+  document.getElementById("kits").style.fontSize = "170%";
+  document.getElementById("kits").style.color = "seashell";
+  document.getElementById("kits").style.backgroundColor = "rgb(185, 152, 189)";
+  document.getElementById("kits").style.textDecoration = none;
 }
 
 function reiniciarBotoes(){
@@ -58,15 +66,15 @@ function reiniciarBotoes(){
   botoes[1].style.color = "rgb(185, 152, 189)";
   botoes[1].style.backgroundColor = "white";
 
-  //botoes[2].style.fontSize = "130%";
-  //botoes[2].style.border = "1px solid rgb(185, 152, 189)";
-  //botoes[2].style.color = "rgb(185, 152, 189)";
-  //botoes[2].style.backgroundColor = "white";
+  botoes[2].style.fontSize = "130%";
+  botoes[2].style.border = "1px solid rgb(185, 152, 189)";
+  botoes[2].style.color = "rgb(185, 152, 189)";
+  botoes[2].style.backgroundColor = "white";
 
-  //botoes[3].style.fontSize = "130%";
-  //botoes[3].style.border = "1px solid rgb(185, 152, 189)";
-  //botoes[3].style.color = "rgb(185, 152, 189)";
-  //botoes[3].style.backgroundColor = "white";
+    //botoes[3].style.fontSize = "130%";
+    //botoes[3].style.border = "1px solid rgb(185, 152, 189)";
+    //botoes[3].style.color = "rgb(185, 152, 189)";
+    //botoes[3].style.backgroundColor = "white";
 }
 
 function reiniciarSessoes(){
@@ -74,6 +82,14 @@ function reiniciarSessoes(){
 
   areas[0].style.display = "none";
   areas[1].style.display = "none";
-  //areas[2].style.visibility = "hidden";
-  //areas[3].style.visibility = "hidden";
+  areas[2].style.display = "none";
+  //areas[3].style.display = "none";
+}
+
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
 }

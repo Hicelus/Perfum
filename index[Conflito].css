@@ -237,9 +237,7 @@ body{
   /* The expanding image container */
   .container2 {
     position: relative;
-    display: block;
-    margin-right: 25%;
-    margin-left: 25%;
+    display: none;
   }
   
   /* Expanding image text */
@@ -262,9 +260,5 @@ body{
   }
 
   .kits{
-      width: 100%;
-  }
-
-  #expandedImg{
-      width: 100%;
+      width: 20%;
   }
