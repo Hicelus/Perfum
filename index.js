@@ -18,25 +18,62 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
-function reiniciarBotoes(){
-    document.getElementsByClassName("botoes").style.fontSize = "130%";
-    document.getElementsByClassName("botoes").style.border = "1px solid rgb(185, 152, 189)";
-    document.getElementsByClassName("botoes").style.color = "rgb(185, 152, 189)";
-}
+
 
 function homeB(){
-    document.getElementById("sessao").style.visibility = "";
-    document.getElementById("sessao").style.height = "auto";
+    reiniciarBotoes();
+    reiniciarSessoes();
+
+    document.getElementById("sessao").style.display = "block";
     document.getElementById("home").style.fontSize = "170%";
     document.getElementById("home").style.color = "seashell";
     document.getElementById("home").style.backgroundColor = "rgb(185, 152, 189)";
     document.getElementById("home").style.textDecoration = none;
+
+    document.getElementById("catPerfumes").style.visibility = "";
+    document.getElementById("catPerfumes").style.height = "auto";
 }
 
 function perfumesB(){
-    document.getElementById("sessao").style.visibility = "hidden";
-    document.getElementById("sessao").style.height = "1px"
+    reiniciarBotoes();
+    reiniciarSessoes();
 
-    //chamar esta função dentro de outras
+    document.getElementById("catPerfumes").style.display = "block";
+    document.getElementById("perfumes").style.fontSize = "170%";
+    document.getElementById("perfumes").style.color = "seashell";
+    document.getElementById("perfumes").style.backgroundColor = "rgb(185, 152, 189)";
+    document.getElementById("perfumes").style.textDecoration = none;
 }
 
+function reiniciarBotoes(){
+  var botoes = document.getElementsByClassName("botoes");
+
+  botoes[0].style.fontSize = "130%";
+  botoes[0].style.border = "1px solid rgb(185, 152, 189)";
+  botoes[0].style.color = "rgb(185, 152, 189)";
+  botoes[0].style.backgroundColor = "white";
+
+  botoes[1].style.fontSize = "130%";
+  botoes[1].style.border = "1px solid rgb(185, 152, 189)";
+  botoes[1].style.color = "rgb(185, 152, 189)";
+  botoes[1].style.backgroundColor = "white";
+
+  //botoes[2].style.fontSize = "130%";
+  //botoes[2].style.border = "1px solid rgb(185, 152, 189)";
+  //botoes[2].style.color = "rgb(185, 152, 189)";
+  //botoes[2].style.backgroundColor = "white";
+
+  //botoes[3].style.fontSize = "130%";
+  //botoes[3].style.border = "1px solid rgb(185, 152, 189)";
+  //botoes[3].style.color = "rgb(185, 152, 189)";
+  //botoes[3].style.backgroundColor = "white";
+}
+
+function reiniciarSessoes(){
+  var areas = document.getElementsByClassName("areas");
+
+  areas[0].style.display = "none";
+  areas[1].style.display = "none";
+  //areas[2].style.visibility = "hidden";
+  //areas[3].style.visibility = "hidden";
+}
