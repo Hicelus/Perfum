@@ -1,16 +1,20 @@
+body{
+  width: 100%;
+}
+
 header{
   width: 100%;
 }
 @media only screen and (max-width: 500px){
   #capa{
-    width: 200%;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 501px){
   #capa{
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 30%;
+    padding-right: 20%;
     max-height: 200px;
   }
 }
@@ -258,17 +262,18 @@ legend{
 }
 
 textarea{
-  width: 315px;
+  width: 90%;
   height: 50px;
 }
 
 #caixa{
+  width: 90%;
   margin: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-textarea{
-  width: 240px;
+.campos{
+  width: 90%;
 }
